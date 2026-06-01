@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="tealGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFD4" />
+      <stop offset="100%" stop-color="#009F82" />
+    </radialGradient>
+    <radialGradient id="indigoGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B61FF" />
+      <stop offset="100%" stop-color="#4D2ECA" />
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="112" fill="#0A0A0F" stroke="#242438" stroke-width="8" />
+
+  <!-- Cell Dot Layout Grid Base Grids -->
+  <rect x="96" y="96" width="136" height="320" rx="24" fill="#141424" stroke="#1D1D30" stroke-width="4" />
+  <rect x="280" y="96" width="136" height="320" rx="24" fill="#141424" stroke="#1D1D30" stroke-width="4" />
+
+  <!-- Active Letter B (Cell 1) dots: 1, 2 -->
+  <circle cx="130" cy="150" r="28" fill="url(#tealGrad)" filter="url(#glow)" />
+  <circle cx="130" cy="256" r="28" fill="url(#tealGrad)" filter="url(#glow)" />
+  <circle cx="198" cy="150" r="16" fill="#1A1A2E" />
+  <circle cx="198" cy="256" r="16" fill="#1A1A2E" />
+  <circle cx="130" cy="362" r="16" fill="#1A1A2E" />
+  <circle cx="198" cy="362" r="16" fill="#1A1A2E" />
+
+  <!-- Active Letter A (Cell 2) dots: 1 -->
+  <circle cx="314" cy="150" r="28" fill="url(#indigoGrad)" filter="url(#glow)" />
+  <circle cx="382" cy="150" r="16" fill="#1A1A2E" />
+  <circle cx="314" cy="256" r="16" fill="#1A1A2E" />
+  <circle cx="382" cy="256" r="16" fill="#1A1A2E" />
+  <circle cx="314" cy="362" r="16" fill="#1A1A2E" />
+  <circle cx="382" cy="362" r="16" fill="#1A1A2E" />
+</svg>

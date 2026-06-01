@@ -1,0 +1,26 @@
+{
+  "name": "BrailleAir Pro",
+  "short_name": "BrailleAir",
+  "description": "Real-time physical Braille to English with AI-powered accuracy verification",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#00D4AA",
+  "background_color": "#0A0A0F",
+  "categories": ["accessibility", "education", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick Translate",
+      "url": "/?mode=read",
+      "description": "Launch straight to camera scanning"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BrailleAir Pro",
+  "description": "Real-time physical Braille to English translation, interactive learning, surface detection, and writing checker.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
