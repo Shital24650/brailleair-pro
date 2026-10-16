@@ -141,7 +141,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0F] text-white flex flex-col justify-between overflow-x-hidden">
+    <main className="min-h-screen bg-[#0A0A0F] text-white flex flex-col justify-between overflow-x-hidden">
       
       {/* 1. SPLASH STATE */}
       {currentState === 'SPLASH' && (
@@ -242,6 +242,6 @@ export default function App() {
           onRefreshProfile={() => setProfile(getCalibrationProfile())}
         />
       )}
-    </div>
+    </main>
   );
 }
